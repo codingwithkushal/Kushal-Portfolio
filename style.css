@@ -1,0 +1,533 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* Basic styles for the header */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+}
+
+#nav-toggle {
+    display: none;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffd700;
+}
+
+/* Hamburger menu for smaller screens */
+.burger-menu {
+    display: none;
+    cursor: pointer;
+}
+
+/* header section end here  */
+.home,
+.love-things,
+.why-me,
+.services,
+.my-design,
+.contact-me {
+    height: 100dvh;
+}
+
+/*this section is for page width */
+/* home css start here  */
+.home-head {
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.home-detail {
+    margin: 0 0 0 30px;
+    font-family: ui-sans-serif;
+    font-size: 30px;
+    color: #999999;
+}
+
+.home-email {
+    font-size: 30px;
+    border: 3px solid black;
+    margin: 64px 0 0 174px;
+    padding: 10px;
+    display: table;
+    color: #313433;
+    text-decoration: none;
+}
+
+.name {
+    margin: 160px 0 0 94px;
+    font-size: 56px;
+    display: inline-block;
+}
+
+.home-img {
+    margin: 0 147px 0 0px;
+    float: right;
+}
+
+/* home css end here  */
+/* love things css start here  */
+.love-things {
+    background-color: #191919;
+}
+
+.lt-head {
+    font-size: 60px;
+    margin: 75px 0px 0px 91px;
+    display: inline-block;
+    color: #ffffff;
+    font-family: antonio;
+}
+
+.lt-detail {
+    float: right;
+    font-size: 33px;
+    margin: 75px 50px 0px 0px;
+    color: #ffffff;
+    font-family: antonio;
+    color: #93A9FF;
+}
+
+.image-block {
+    margin: 70px 0 0 0;
+    display: flex;
+
+}
+
+.image {
+    flex: 1;
+    /* Distribute available space evenly among images */
+    overflow: hidden;
+    margin: 0 10px;
+    /* Add margin for spacing between images */
+}
+
+.image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Ensure the entire image is visible */
+}
+
+/* love things css end here  */
+.why-me {
+    background-color: #CDCDCD;
+}
+
+.why-me p {
+    text-align: center;
+}
+
+.top-center {
+    font-family: roboto;
+    font-size: 24px;
+    padding-top: 70px;
+}
+
+.middle-center {
+    margin: 30px;
+    padding-top: 60px;
+    font-size: 45px;
+    font-weight: bolder;
+    font-family: system-ui;
+}
+
+.bottom-center {
+    margin: 30px;
+    font-family: roboto;
+    font-size: 24px;
+    padding-top: 60px;
+}
+
+/* Why me end here  */
+/* Service start here  */
+.services-head {
+    font-size: 53px;
+    padding-left: 222px;
+    text-align: center;
+    font-family: 'Pragmatica', sans-serif;
+    display: inline-block;
+    padding-top: 216px;
+    width: 549px;
+}
+
+.rotated-hr {
+    float: right;
+    height: 3px;
+    border: none;
+    background-color: #828181;
+    transform: rotate(90deg);
+    margin: -67px 400px 0 0;
+    width: 550px
+}
+
+.services ul {
+    font-family: Roboto;
+    font-size: 30px;
+    margin: -320px 220px 1px 0;
+    float: right;
+}
+
+.service-li {
+    font-weight: bolder;
+    margin: 8px 2px 7px -56px;
+}
+/* Service End  here  */
+/* my design start here  */
+.my-design{
+ background-color: #191919;;
+}
+.container p {
+    padding-top: 20px;
+    padding-left: 113px;
+    width: 309px;
+  }
+.container {
+    display: flex;
+  }
+  .cw{
+    font-weight: bold;
+    color: #93A9FF;
+  }
+  .left-side {
+    font-weight: bold;
+    font-size: 60px;
+    margin: 75px 0px 0px 91px;
+    display: inline-block;
+    color: #ffffff;
+    font-family: antonio;
+    flex: 1; /* Take up 50% of the container */
+    padding: 20px; /* Add padding for spacing */
+  }
+  
+  .right-side {
+    flex: 1; /* Take up 50% of the container */
+    padding-top: 78px;
+    padding-right: 280px;
+  }
+  
+  .image-grid {
+    margin: -9px -111px -6px 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    grid-gap: 50px 100px; /* Add gap between images */
+  }
+  
+  .image-grid img {
+    width: 100%; /* Ensure images fill their container */
+    height: auto; /* Maintain aspect ratio */
+  }
+  /* my design end here  */
+  /* contact-me start here  */
+  .contact-img{
+    padding: 70px 0 0 50px;
+    float: left;
+    display: block;
+  }
+  .contact-head{
+    text-align: center;
+    font-weight: bold;
+    padding-left: 130px;
+    font-size: 80px;
+    font-family: 'Pragmatica', sans-serif;
+    display: inline-block;
+    padding-top: 100px;
+    width: 650px;
+  }
+  .contact-detail{
+    font-size: 33px;
+    padding: 40px 100px 0 0;
+    display: block;
+    text-align: center;
+    font-family: 'Roboto';
+    color: #999999;
+  }
+  .self-detail-head{
+    display: block;
+    padding: 65px 0 20px 520px;
+  }
+  .phone{
+    padding: 0px 70px 0px 100px;
+    font-weight: bold;
+    font-family: 'Roboto';
+    display: inline;
+  }
+  .number, .mail{
+    margin: 0px -46px 0px 20px;
+    padding: 0px 0px 0px 94px;
+    font-weight: bold;
+    font-family: 'Roboto';
+    display: inline;
+  }
+.social{
+    padding: 0 2px 0 20px;
+}
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+    }
+
+    .burger-menu {
+        display: block;
+    }
+
+    /* Hide checkbox */
+    #nav-toggle {
+        display: none;
+    }
+
+    /* Show navigation when checkbox is checked */
+    #nav-toggle:checked+nav ul {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #333;
+        padding: 1rem;
+    }
+
+    #nav-toggle:checked+nav ul li {
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+
+    /* home section start here  */
+    .home {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .home-img {
+        width: 100%;
+        margin: 20px 0 0 10px;
+    }
+
+    .name {
+        text-align: center;
+        margin: 20px;
+    }
+
+    .home-head {
+        font-size: 24px;
+    }
+
+    .home-email {
+        display: block;
+        margin: 20px;
+    }
+
+    /* home section end here  */
+    /* lt page start here  */
+    .love-things {
+        margin-top: -68px;
+        height: 115dvh;
+    }
+
+    .lt-head,
+    .lt-detail {
+        display: block;
+        /* Change display to block */
+        text-align: center;
+        /* Center align text */
+    }
+
+    .lt-head {
+        text-align: center;
+        font-size: 40px;
+        margin-left: -11px;
+        margin-bottom: 20px;
+    }
+
+    .lt-detail {
+        text-align: center;
+        font-size: 20px;
+        margin-top: 3px;
+        margin-right: 108px;
+    }
+
+    .image-block {
+        margin: 75px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image {
+        flex: 1;
+        margin: 10px 0;
+    }
+
+    /* love things css end here  */
+    /* why me css start here  */
+    .why-me p {
+        text-align: center;
+    }
+
+    .top-center,
+    .middle-center,
+    .bottom-center {
+        padding-top: 10vh;
+        margin: 10px;
+    }
+
+    .middle-center {
+        font-size: 30px;
+        /* Adjusted font size */
+    }
+
+    .bottom-center {
+        font-size: 18px;
+        /* Adjusted font size */
+    }
+
+    /* why me css end here  */
+    /* service start here  */
+    .services-head {
+        display: inline-block;
+        font-size: 57px;
+        padding: 20px;
+        text-align: center;
+        width: 391px;
+        padding-top: 14vh;
+        padding-left: 32px;
+    }
+
+    .rotated-hr {
+        float: left;
+        margin: 0px 67px 0px 34px;
+        transform: none;
+        width: 3px;
+        height: 47vh;
+        margin-top: 2vh;
+    }
+
+    .services ul {
+        font-size: 26px;
+        /* Decrease font size */
+        margin: 0 auto;
+        /* Center horizontally */
+        padding: 0;
+        /* Reset padding */
+        float: none;
+        /* Remove float */
+        width: 100%;
+        /* Adjust width to fill viewport */
+    }
+
+    .service-li {
+        font-weight: bold;
+        margin: 20px 0px 12px 0px;
+    }
+    /* services end here  */
+    /* my design start here  */
+    .my-design{
+        height: 169dvh;
+    }
+    .container p {
+        padding: 0px 0 0 103px;
+        width: -29px;
+      }
+      
+      .left-side {
+        margin: 0px -379px 0px 0px;
+        padding: 20px; /* Adjust padding */
+        font-size: 36px; /* Adjust font size */
+        text-align: center; /* Center align text */
+      }
+      
+      .right-side {
+        padding: 20px; /* Adjust padding */
+      }
+      
+      .image-grid {
+        margin: 237px 0px 0px -16px;
+        grid-template-columns: 1fr; /* Set single column layout */
+        grid-gap: 20px; /* Adjust gap between images */
+      }
+      /* my design end here  */
+      /* contac  me start here  */
+      .contact-me {
+        text-align: center; /* Center align the content */
+      }
+    
+      .contact-img {
+        display: block; /* Ensure image takes full width */
+        margin: 0 auto; /* Center the image */
+      }
+    
+      .contact-head{ 
+        margin: -14px 0px 0px -91px;
+        text-align: center;
+      }
+      .contact-detail{
+        margin: 0px -203px 0 80px;
+      }
+      .phone{
+        display: block;
+    margin: -66px -65px 1px -5px
+      }
+      .self-detail-head {
+        margin-bottom: -51px;
+        display: flex;
+        text-align: left;
+        margin-top: 13px;
+        margin-left: -491px;
+      }
+    
+      .self-detail {
+        width: 432px;
+        margin-left: 100px;
+        text-align: center;
+      }
+    .number{
+        margin-right: -99px;
+        margin-left: -140px;
+    }
+      .self-detail p {
+        margin: 10px 3px 0px 13px
+      }
+    
+      .self-detail p.phone {
+        display: contents;
+        margin-right: 20px;
+      }
+    
+      .self-detail p.phone a {
+        margin-left: 5px; /* Adjust margin between social media icons */
+        margin-right: 5px; /* Adjust margin between social media icons */
+      }
+}
