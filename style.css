@@ -363,7 +363,7 @@ nav ul li a:hover {
     /* lt page start here  */
     .love-things {
         margin-top: -68px;
-        height: 115dvh;
+        height: auto;
     }
 
     .lt-head,
@@ -464,7 +464,7 @@ nav ul li a:hover {
     /* services end here  */
     /* my design start here  */
     .my-design{
-        height: 198dvh;
+        height: auto;
     }
     .container p {
         padding: 0px 0 0 20px;
@@ -483,7 +483,6 @@ nav ul li a:hover {
       }
       
       .image-grid img{
-        padding: 20px;
     width: 100%;
     height: auto;
       }
@@ -497,7 +496,7 @@ nav ul li a:hover {
       /* contac  me start here  */
       .contact-me {
         text-align: center; /* Center align the content */
-        height: 80px;
+        height: auto;
       }
     
       .contact-img {
